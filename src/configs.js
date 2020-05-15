@@ -21,5 +21,5 @@ export const configSchema = {
 export const defaultConfig = {
   text: "Element Starter Block",
   fontFamily: "'Fira Code', monospace",
-  fontWeight: "Normal",
+  fontWeight: "Bold",
 }
