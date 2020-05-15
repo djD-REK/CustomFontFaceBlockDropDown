@@ -14,12 +14,12 @@ export const configSchema = {
   },
   fontWeight: {
     label: "Font weight",
-    type: ElementPropTypes.oneOf(["Normal", "Bold"]),
+    type: ElementPropTypes.oneOf(["normal", "bold"]),
   },
 }
 
 export const defaultConfig = {
   text: "Element Starter Block",
   fontFamily: "'Fira Code', monospace",
-  fontWeight: "Bold",
+  fontWeight: "bold",
 }
