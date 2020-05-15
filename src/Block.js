@@ -4,23 +4,15 @@ import { getStyles } from "./getStyles"
 import { defaultConfig } from "./configs"
 
 const Block = (props) => {
-  // Helper function to add a stylesheet to the <head> element
-  const addLink = (href) => {
-    const link = document.createElement("link")
-    link.setAttribute("type", "text/css")
-    link.setAttribute("rel", "stylesheet")
-    link.setAttribute("href", href)
-    document.head.appendChild(link)
-  }
-
   // React's Effect Hook (useEffect) runs a function when the Block is rendered
   useEffect(() =>
     // Add a link to the font stylesheet
     {
-      addLink(
+      // The addLink utility is a helper function to add a stylesheet to the <head> element
+      props.utils.addLink(
         "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
       )
-      addLink(
+      props.utils.addLink(
         "https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap "
       )
     }, [])
