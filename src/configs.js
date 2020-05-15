@@ -8,8 +8,8 @@ export const configSchema = {
   fontFamily: {
     label: "Font family",
     type: ElementPropTypes.oneOf([
-      "'Dancing Script', cursive",
-      "'Fira Code', monospace",
+      `"Dancing Script",cursive`,
+      `"Fira Code",monospace`,
     ]),
   },
   fontWeight: {
@@ -20,6 +20,6 @@ export const configSchema = {
 
 export const defaultConfig = {
   text: "Element Starter Block",
-  fontFamily: "'Fira Code', monospace",
+  fontFamily: `"Fira Code",monospace`,
   fontWeight: "bold",
 }

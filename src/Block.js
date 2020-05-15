@@ -9,12 +9,6 @@ const Block = (props) => {
     // Add a link to the font stylesheet
     {
       // The addLink utility is a helper function to add a stylesheet to the <head> element
-      props.utils.addLink(
-        "https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
-      )
-      props.utils.addLink(
-        "https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap "
-      )
     }, [])
   // The second parameter is an empty array, [], to make useEffect run just once
 

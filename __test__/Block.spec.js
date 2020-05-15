@@ -50,7 +50,7 @@ describe("The Block", () => {
       expect(wrapper.text()).toBe(customText)
     })
     it("should render the block with the custom font sizes", () => {
-      const customFontFamily = "'Dancing Script', cursive"
+      const customFontFamily = `"Dancing Script",cursive`
       const customFontWeight = "normal"
 
       const wrapper = mount(
