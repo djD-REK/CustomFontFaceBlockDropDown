@@ -2,6 +2,8 @@ const tenantId = "$YOUR_TENANT_ID"
 
 const localEnvPropOverrides = {
   text: "Custom prop value for local testing",
+  fontFamily: `"Dancing Script",cursive`,
+  fontWeight: "normal",
 }
 
 const dataUtils = {

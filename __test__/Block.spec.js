@@ -26,7 +26,7 @@ describe("The Block", () => {
       const wrapper = mount(<Block {...props} />)
       expect(wrapper.text()).toBe(defaultConfig.text)
     })
-    it("should render the block with the default font sizes", () => {
+    it("should render the block with the default font faces", () => {
       const wrapper = mount(<Block {...props} />)
       // Force Aphrodite to output the CSS-in-JS styles in time to test them:
       flushToStyleTag()
@@ -49,7 +49,7 @@ describe("The Block", () => {
       const wrapper = mount(<Block {...props} text={customText} />)
       expect(wrapper.text()).toBe(customText)
     })
-    it("should render the block with the custom font sizes", () => {
+    it("should render the block with the custom font faces", () => {
       const customFontFamily = `"Dancing Script",cursive`
       const customFontWeight = "normal"
 
